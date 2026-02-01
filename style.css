@@ -1,16 +1,27 @@
+/* ===== GLOBAL ===== */
 body {
   margin: 0;
-  font-family: "Poppins", Arial, sans-serif;
-  background: #fff8f0;
-  color: #3b2f2f;
+  font-family: "Georgia", serif;
+  background: #f7efe3;
+  color: #4b2e1e;
 }
 
+h1, h2, h3 {
+  font-family: "Times New Roman", serif;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== HEADER ===== */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: #5b1d16;
   padding: 15px 30px;
-  background: #6a1b1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -18,24 +29,23 @@ header {
 }
 
 nav a {
-  color: #ffffff;
+  color: #f5d27a;
   margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
 }
 
-nav a:hover {
-  color: #ffd54f;
-}
-
+/* ===== HERO ===== */
 .hero {
   text-align: center;
-  padding: 90px 20px;
+  padding: 80px 20px;
+  background: linear-gradient(
+    rgba(247,239,227,0.9),
+    rgba(247,239,227,0.9)
+  );
 }
 
 .hero h1 {
   font-size: 2.6rem;
-  margin-bottom: 15px;
 }
 
 .hero p {
@@ -46,34 +56,59 @@ nav a:hover {
 
 .hero-btn {
   display: inline-block;
-  margin-top: 25px;
-  background: #6a1b1a;
-  color: white;
-  padding: 14px 30px;
+  margin-top: 30px;
+  background: #5b1d16;
+  color: #f5d27a;
+  padding: 14px 32px;
   border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 
+/* ===== CONTENT ===== */
 .content {
   padding: 60px 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== PRODUCTS ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
 }
 
 .product-card {
-  background: #ffffff;
-  padding: 25px;
-  margin: 20px 0;
-  border-radius: 14px;
-  box-shadow: 0 10px 18px rgba(0,0,0,0.08);
+  background: #fff3df;
+  border: 2px solid #d8b384;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
 }
 
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 20px;
-  background: #6a1b1a;
-  color: white;
+  background: #5b1d16;
+  color: #f5d27a;
 }
 
+/* ===== WHATSAPP BUTTON ===== */
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
@@ -82,10 +117,10 @@ footer {
   color: white;
   padding: 12px 18px;
   border-radius: 50px;
-  text-decoration: none;
   font-weight: bold;
 }
 
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
