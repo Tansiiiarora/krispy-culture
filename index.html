@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krispy Culture — The Original Taste of Banaras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">Krispy Culture</a>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav" class="nav">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Krispy Culture</h1>
+        <p>The original taste of Banaras — handcrafted papad, achar, murrabba, and gulkand made with love.</p>
+        <a class="btn" href="#products">Explore Products</a>
+      </div>
+    </section>
+
+    <section id="products" class="container products">
+      <h2>Our Products</h2>
+      <div class="grid">
+        <article class="product">
+          <img src="images/papad.svg" alt="Papad" />
+          <h3>Papad</h3>
+          <p>Crispy, traditional papads made from authentic recipes of Banaras.</p>
+        </article>
+
+        <article class="product">
+          <img src="images/achar.svg" alt="Achar" />
+          <h3>Achar (Pickles)</h3>
+          <p>Bold flavors, preserved using time-honored techniques and natural spices.</p>
+        </article>
+
+        <article class="product">
+          <img src="images/murrabba.svg" alt="Murrabba" />
+          <h3>Murrabba</h3>
+          <p>Sweet, tangy fruit preserves prepared the traditional way.</p>
+        </article>
+
+        <article class="product">
+          <img src="images/gulkand.svg" alt="Gulkand" />
+          <h3>Gulkand</h3>
+          <p>Handmade rose preserve with the fragrant roses of Banaras.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About Krispy Culture</h2>
+      <p>Krispy Culture started with a love for authentic Banarasi flavors. We source quality ingredients and follow traditional methods to bring you tastes that feel like home.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>For orders and inquiries, reach out to us or use the form below.</p>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Krispy Culture — The Original Taste of Banaras</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
